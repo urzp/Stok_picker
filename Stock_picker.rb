@@ -5,6 +5,9 @@ class Trade
 	
 attr_accessor :days, :daly_prise
 
+	def stock_picker
+
+	end
 	
 end
 
