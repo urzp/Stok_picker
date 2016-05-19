@@ -11,7 +11,7 @@ attr_accessor :days, :daly_prise
 		daly_prise.each do |buy|
 			day_sell=0
 			daly_prise.each do |sell|
-					all_trades[[day_buy,day_sell]]=sell-buy
+					all_trades[[day_buy,day_sell]]=sell-buy if day_buy<day_sell
 				day_sell+=1	
 			end
 		day_buy+=1	
