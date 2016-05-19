@@ -17,7 +17,9 @@ attr_accessor :days, :daly_prise
 		day_buy+=1	
 		end
 		
-		puts all_trades.max_by{|potencial_trade,value| value}
+		benifit=all_trades.max_by{|potencial_trade,value| value}
+		benifit_days=benifit[0]
+		benifit_days
 	end
 	
 end
