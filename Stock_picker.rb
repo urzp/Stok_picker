@@ -17,7 +17,7 @@ attr_accessor :days, :daly_prise
 		day_buy+=1	
 		end
 		
-		puts all_trades
+		puts all_trades.max_by{|potencial_trade,value| value}
 	end
 	
 end
