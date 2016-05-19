@@ -6,7 +6,18 @@ class Trade
 attr_accessor :days, :daly_prise
 
 	def stock_picker
-
+		all_trades={}
+		day_buy=0
+		daly_prise.each do |buy|
+			day_sell=0
+			daly_prise.each do |sell|
+					all_trades[[day_buy,day_sell]]=sell-buy
+				day_sell+=1	
+			end
+		day_buy+=1	
+		end
+		
+		puts all_trades
 	end
 	
 end
